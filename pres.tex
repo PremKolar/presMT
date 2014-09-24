@@ -1,62 +1,393 @@
 \documentclass{beamer}
-%\setbeamertemplate{footline}[infolines theme]
+\setbeamertemplate{footline}[infolines theme]
+% \usepackage{beamerthemeshadow}
+
+\usepackage{wrapfig}
 \input{SUBS/usepackage.tex}
 \input{SUBS/newcommands.tex}
-\graphicspath{ {./FIGS/}}
+\graphicspath{ {./FIGS/} }
+\usepackage{multimedia}
 \begin{document}
-%%
 \title{eddy bla}  
 \author{NK}
-%%%
-%\section{Introduction}
-%\input{introduction.tex}
-%\section{Detection}
-%\input{detection.tex}
-%\section{Tracking}
-%\input{tracking.tex}
-
-\newcommand{\cg}[1]{\cellcolor{green!25}#1}
-\newcommand{\ce}[1]{\cellcolor{red!25}#1}
-\newcommand{\cb}[1]{\cellcolor{gray!25}#1}
-\newcommand{\n}{n/a}
-%\newcommand{\citeP}{\Citealt{Petersen2013}}
-%\newcommand{\citeCs}{\Citealt{Chelton2007}}
-%\newcommand{\citeCe}{\Citealt{Chelton2011}}
-\newcommand{\citeP}{\cite{Petersen2013}}
-\newcommand{\citeCs}{\cite{Chelton2007}}
-\newcommand{\citeCe}{\cite{Chelton2011}}
-\newcommand{\citeCes}{\cite{Chelton2011,Chelton2007}}
+\date{\today} 
 \begin{frame}
- \frametitle{to-do-matrix}
- \begin{tiny} 
-\begin{tabular}{r|c|c|c|}
-\multicolumn{1}{c}{}	& \multicolumn{1}{c}{pop}	&	\multicolumn{1}{c}{aviso}	&	\multicolumn{1}{c}{comparison}\\
-\cline{2-4}
-U						&	\cg{\citeP}				&		\cg{\citeCes}			&		\cg{\citeP}	\\
-\cline{2-4}
-scale					&	\cg{\citeP}				&		\cg{\citeCes}			&		\cg{\citeP}	\\
-\cline{2-4}
-method Chelton			&	\ce{N}					&		\cg{\citeCe,N}			&		\ce{N}	\\
-\cline{2-4}
-method $R^2$			&	\cg{\citeP}				&		\cb{\n}					&		\cb{\n}	\\
-\cline{2-4}
-method OW				&	\cg{\citeP}				&		\cg{\citeCs}			&		\cg{\citeP}	\\
-\cline{2-4}
-method IQ				&	\ce{N}					&		\ce{N}					&		\ce{N}	\\
-\cline{2-4}
-net U					&	\ce{N}					&		\ce{N}					&		\ce{N}	\\
-\cline{2-4}
-steering level			&	\ce{N}					&		\cb{\n}					&		\cb{\n}	\\
-\cline{2-4}
-$p(z)$					&	\ce{N}					&		\cb{\n}					&		\cb{\n}	\\
-\cline{2-4}
-$f/H$					&	\ce{N}					&		\ce{ }					&		\ce{ }	\\
-\cline{2-4}
-\end{tabular}
-\def\newblock{\hskip .11em plus .33em minus .07em}
-\bibliographystyle{acm}
-\bibliography{/home/zmaw/u300065/mendeley/library}
-\end{tiny}
+\titlepage
 \end{frame}
 
+%\begin{frame}
+%\frametitle{Table of contents}
+%\tableofcontents
+%\end{frame} 
+
+
+%\section{Introduction}
+
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[width=300pt,keepaspectratio=true]{png1024x/atl1024x500PHONged.png}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[width=300pt,keepaspectratio=true]{shrunks/scale_04.pdf}
+%\end{figure}
+%\end{frame}
+
+%\section{Detection}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{shrunks/slice1.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{shrunks/slice2.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{shrunks/slice3.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{shrunks/slice4.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{shrunks/sliceAll.pdf}
+%\end{figure}
+%\end{frame}
+
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{shrunks/Non-filtered_SSH.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[width=300pt,keepaspectratio=true]{shrunks/High-pass_filtered_SSH.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{shrunks/ch.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{shrunks/slice5.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+ %\frametitle{Isoperimetric Quotient (IQ)}
+%\begin{figure}
+	%\includegraphics[height=150pt,keepaspectratio=true]{shrunks/isoper.pdf}
+%\end{figure}
+%\end{frame}
+
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{shrunks/iq6dlMrIc.pdf}
+%\end{figure}
+%\end{frame}
+
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{shrunks/iq6toiq55.pdf}
+%\end{figure}
+%\end{frame}
+
+%%% TRACKING
+%\section{Tracking}
+
+%%%effectively looking at zero om contours. fickle (similar to OW, which is even d_xx squared!). gladly pop and aviso product are rel. clean in terms of noise.
+%%% note: dyn radius <=> std(gaussbell)
+%%% f(x)=exp(- (2 r_dyn)^-2   x^2 )
+
+%\begin{frame}
+%\frametitle{$\partial_x \sim \vec{U}, \; \partial_{xx} \sim \vec{\omega}, \;  \left(\partial_{xx}\right)^2 \sim OW \sim \enstro$}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{prof1.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{prof2.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+ %\frametitle{$ y(x)=\sqrt{e} a \exp{\left(- x^2/2\sigma^2\right)}$}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{prof3.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+ %\frametitle{$ y(x)=\sqrt{e} a \exp{\left(- x^2/2\sigma^2\right)}$}
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=220pt,keepaspectratio=true]{prof3b.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+%\centering
+	%\includegraphics[width=300pt,keepaspectratio=true]{prof3bPsi.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%% NOTE: 14day dt
+%\begin{figure}
+	%\centering
+	%\includegraphics[height=250pt,keepaspectratio=true]{shrunks/scatRadOLrComp.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[width=300pt,keepaspectratio=true]{shrunks/parAnalyCH.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[width=300pt,keepaspectratio=true]{shrunks/parAnalyIQ2.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[width=300pt,keepaspectratio=true]{shrunks/parAnalyIQ6.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[width=300pt,keepaspectratio=true]{crpd_scat1_shrunk2prepress.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%\begin{figure}
+	%\centering
+	%\includegraphics[width=300pt,keepaspectratio=true]{deflectsCycs_shrunk2prepress.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+ %\frametitle{Isoperimetric Quotient (IQ)}
+%\begin{figure}
+	%\centering
+	%\includegraphics[width=300pt,keepaspectratio=true]{MapVelCycs.pdf}
+%\end{figure}
+%\end{frame}
+
+
+\begin{frame}
+	\frametitle{Okubo-Weiss}
+	\centering
+	\begin{minipage}[T]{1\textwidth}
+	\begin{figure}
+		\includegraphics[width=200pt,keepaspectratio=true]{OWpatch2.pdf}
+	\end{figure}		
+	\end{minipage}
+\vfill
+	\begin{minipage}[T]{1\textwidth}
+		use eigenvalues of 2d deformation tensor to detect vortex: 
+		%\begin{align*}
+			%%det(\lambda\vec{I} \vec{\Lambda} - \vec{T})=0
+			%%&=
+			%%(\lambda-u_{x})(\lambda+u_{x}) - v_{x}u_{y} \\
+			%%%&=
+			%%%\lambda^{2}-u_{x}^{2} - v_{x}u_{y}\\ 
+			%\lambda
+			%&=
+			%\pm \sqrt{u_{x}^{2} + v_{x}u_{y}}
+		%\end{align*}
+\begin{align*}
+& det(\lambda\vec{I}- \vec{\grad \vec{u}}) =0\\
+&\lambda^{2} =OW/2=\tikzmarkin[fill=yellow]{first eq}u_{x}^{2} + v_{x}u_{y}\tikzmarkend{first eq} \\
+%&=-(\vort{u})^{2} + (\div{\vec{u}})^{2} + (\grad_{\updownarrow} \cdot \vec{u})^{2}	+ (\underaccent{90^{\circ}}{\grad} \cdot\vec{u})^{2}	\\	&=-vorticity^{2}+divergence^{2}+shear^{2}+stretching^{2}\\& = OW/4
+\end{align*}		
+\end{minipage}
+\end{frame}
+
+
+%\begin{frame}
+%\begin{center}
+	%\centering
+%\href{run:/usr/bin/mplayer -fs MOViq55RoL4MadShort.avi}{
+%\includegraphics[scale=0.25]
+%{MOViq55RoL4MadShort.jpeg}}
+%\end{center}
+%\end{frame}
+
+
+%%\begin{frame}
+%% \frametitle{pictures in latex beamer class}
+%\begin{figure}
+	%\centering
+%% 	\includegraphics[width=300pt,keepaspectratio=true]{GS.pdf}
+	%\includegraphics[height=220pt,keepaspectratio=true]{scale_04.pdf}
+%\end{figure}
+%\end{frame}
+
+
+%\begin{frame}
+ %\frametitle{Thresholds}
+%\begin{figure}
+	%\centering
+%% 	\includegraphics[width=300pt,keepaspectratio=true]{GS.pdf}
+	%\includegraphics[height=220pt,keepaspectratio=true]{scat1.pdf}
+%\end{figure}
+%\end{frame}
+
+%\begin{frame}
+%%  \frametitle{Thresholds}
+%\begin{figure}
+	%\centering
+%% 	\includegraphics[width=120mm,keepaspectratio=true]{GS.pdf}
+	%\includegraphics[height=90mm,keepaspectratio=true]{CRPD_deflectsCycs.pdf}
+%\end{figure}
+%\end{frame}
 \end{document}
+
+
+
+
+\begin{frame}	
+\begin{align*}
+	\left| \lambda \vec{I} - \grad \vec{u} \right|
+	&=
+\begin{vmatrix}
+ \lambda - u_{x} & u_{y} \\
+ v_{x} & \lambda - v_{y}
+ \end{vmatrix}	\\
+ &=
+ \left(  	\lambda - u_{x} \right)  \left( 	\lambda - v_{y} \right){}
+ - v_{x} u_{y}\\
+ \lambda^{2}&=
+ 	  u_{x}^{2}
+ + v_{x} u_{y}
+\end{align*}
+
+\begin{align*}
+	\left| \lambda \vec{I} - \vec{\Omega}  \right|
+	&=
+\frac{1}{2}\begin{vmatrix}
+ \lambda & u_{y}-v_{x} \\
+ -u_{y}+v_{x} & \lambda 
+ \end{vmatrix}	\\
+ 2\lambda_{\Omega}^{2}
+ &=
+ u_{y}^{2}-2u_{y}v_{x}+v_{x}^{2}
+\end{align*}
+
+\begin{align*}
+	\left| \lambda \vec{I} - \vec{E}  \right|
+	&=
+\frac{1}{2}\begin{vmatrix}
+ \lambda -2u_{x} & u_{y}+v_{x} \\
+ u_{y}+v_{x} & \lambda -2v_{y}
+ \end{vmatrix}	\\
+ %&(\lambda -2u_{x} ) (\lambda +2u_{x})
+ %-u_{y}^{2}-2u_{y}v_{x}-v_{x}^{2}  
+ %\\
+  2\lambda_{E}^{2}
+ &=4u_{x}^{2}
+ +u_{y}^{2}
+ + 2u_{y}v_{x}
+ +v_{x}^{2}  
+\end{align*}
+\begin{align*}
+	-\lambda_{\Omega}^{2} + \lambda_{E}^{2}
+	&=
+	 2u_{y}v_{x}
+	 +2u_{x}^{2}
+\end{align*}
+
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\begin{align*}
+&=-(v_{x}-u_{y})^{2}
++(u_{x}+v_{y})^{2}
++(v_{x}+u_{y})^{2}
++(u_{x}-v_{y})^{2}\\
+&=
+-(
+v_{x}^{2}
+-2v_{x}u_{y}
++u_{y}^{2}
+)
++0+
+(
+v_{x}^{2}
++2v_{x}u_{y}
++u_{y}^{2}
+)
++(
+u_{x}^{2}
+-2u_{x}v_{y}
++v_{y}^{2}
+)\\
+&=
+4v_{x}u_{y}
++(
+u_{x}^{2}
+-2u_{x}v_{y}
++v_{y}^{2}
+)\\
+&=
+4v_{x}u_{y}
++
+4u_{x}^{2}
+\\
+\end{align*} 
+\end{frame}
+
